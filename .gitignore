@@ -1,2 +1,6 @@
 __pycache__
+.mypy_cache
 *.pyc
+testdata
+Archive
+.env
