@@ -1,7 +1,7 @@
 # coding= latin-1
 import PyDAQmx
-from PyDAQmx.DAQmxFunctions import *
 from PyDAQmx.DAQmxConstants import *
+from PyDAQmx.DAQmxFunctions import *
 
 
 class ContinuousPulseTrainGeneration:

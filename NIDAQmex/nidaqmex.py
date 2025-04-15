@@ -7,13 +7,12 @@ https://nidaqmx-python.readthedocs.io/en/latest/
 
 
 import matplotlib.pyplot as plt
-from nptdms import TdmsFile
-
 import nidaqmx
 from nidaqmx.constants import (READ_ALL_AVAILABLE, AcquisitionType,
                                LineGrouping, LoggingMode, LoggingOperation,
                                VoltageUnits)
 from nidaqmx.types import CtrTime
+from nptdms import TdmsFile
 
 # import nidaqmx.system
 

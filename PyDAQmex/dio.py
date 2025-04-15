@@ -7,7 +7,6 @@ import numpy as np
 import PyDAQmx
 from PyDAQmx import Task
 
-
 # [LSB...MSB] = port[0 1 2 3 4 5 6 7]
 data = np.array([1, 0, 1, 0, 1, 0, 1, 1], dtype=np.uint8)
 

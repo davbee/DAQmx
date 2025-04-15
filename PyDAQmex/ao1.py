@@ -4,7 +4,6 @@ import numpy as np
 import PyDAQmx
 from PyDAQmx import Task
 
-
 # Create a task
 aotask = Task()
 

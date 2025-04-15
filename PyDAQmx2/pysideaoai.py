@@ -68,15 +68,8 @@ import pyqtgraph as pg
 # from dotenv import load_dotenv
 from PyDAQmx import Task
 from PySide6.QtCore import QTimer
-from PySide6.QtWidgets import (
-    QApplication,
-    QHBoxLayout,
-    QMainWindow,
-    QPushButton,
-    QTextEdit,
-    QVBoxLayout,
-    QWidget,
-)
+from PySide6.QtWidgets import (QApplication, QHBoxLayout, QMainWindow,
+                               QPushButton, QTextEdit, QVBoxLayout, QWidget)
 
 # # Load environment variables from .env file
 # load_dotenv()
@@ -86,7 +79,7 @@ from PySide6.QtWidgets import (
 # AOCHANNEL = os.getenv("AOCHANNEL", "Dev2/ao0")  # Default to "Dev2/ao0" if not set
 
 # Ensure the testdata/ folder exists
-os.makedirs("testdata", exist_ok=True)
+os.makedirs("PyDAQmx2/testdata", exist_ok=True)
 
 
 class DAQApp(QMainWindow):
@@ -283,7 +276,7 @@ class DAQApp(QMainWindow):
     def save_data_to_file(self):
         """Save the deltat and ain to a file in the testdata/ folder."""
         timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-        filename = f"testdata/data_{timestamp}.csv"
+        filename = f"PyDAQmx2/testdata/data_{timestamp}.csv"
         data = np.column_stack(
             (self.deltat, self.aout, self.ain)
         )  # Save all data in memory
