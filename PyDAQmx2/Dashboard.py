@@ -36,6 +36,7 @@ app.layout = html.Div(
                     id="toggle-table",
                     options=[{"label": "Show Table", "value": "show"}],
                     value=[],  # Default to not showing the table
+                    # value=["show"],  # Default to showing the table
                     style={"textAlign": "center", "marginTop": "10px"},
                 ),
             ]
