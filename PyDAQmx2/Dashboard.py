@@ -1,3 +1,49 @@
+"""
+Date: 2025-04-16
+Last Modified: 2025-04-16
+Description: NI-USB-6008 Data Viewer Dashboard
+
+This program is a Dash-based web application designed to visualize data acquired
+from the NI-USB-6008 device. It allows users to select `.csv` files from a specified
+folder, view the data in a table, and plot the data dynamically.
+
+Key Features:
+1. **File Selection**:
+   - Lists all `.csv` files in the `testdata` folder.
+   - Allows users to select a file from a dropdown menu.
+
+2. **Data Table**:
+   - Displays the contents of the selected `.csv` file in a paginated table.
+   - Includes an option to toggle the visibility of the table.
+
+3. **Dynamic Plotting**:
+   - Plots the data from the first two columns of the selected `.csv` file.
+   - Automatically updates the plot when a new file is selected.
+
+4. **Error Handling**:
+   - Displays appropriate error messages if the file cannot be loaded or if the data is insufficient for plotting.
+
+5. **Responsive Design**:
+   - The layout is designed to be user-friendly and works well on different screen sizes.
+
+Requirements:
+- Python libraries: `dash`, `pandas`.
+- A `testdata` folder containing `.csv` files in the same directory as this script.
+
+How to Use:
+1. Place the `.csv` files in the `testdata` folder.
+2. Run the script using the command:
+   ```bash
+   python Dashboard.py
+3. Open the application in your browser at http://127.0.0.1:8051.
+4. Select a file from the dropdown menu to view its data and plot.
+
+Note:
+
+The .csv files should have at least two columns for plotting.
+Ensure the testdata folder exists and contains valid .csv files.
+"""
+
 import os
 import pandas as pd
 from dash import Dash, dcc, html, Input, Output, dash_table

@@ -3,7 +3,7 @@ Date: 2023-10-05 16:00:00
 Last Modified: 2025-04-16
 Description: DAQmx Real-Time Strip Chart Application with Google Drive Integration
 
-This program is a PyQt-based GUI application that uses the NI-DAQmx library to
+This program is a PySide6-based GUI application that uses the NI-DAQmx library to
 perform real-time data acquisition and generation. It is designed to interface
 with National Instruments (NI) DAQ devices to read analog input signals and
 generate analog output signals. Additionally, it integrates with Google Drive
@@ -292,7 +292,7 @@ class DAQApp(QMainWindow):
             # Create a QTimer for periodic updates
             self.timer = QTimer()
             self.timer.timeout.connect(self.perform_iteration)
-            self.timer.start(20)  # 50ms interval (equivalent to time.sleep(0.05))
+            self.timer.start(20)  # 20ms interval (equivalent to time.sleep(0.02))
 
         except Exception as e:
             self.log_message(f"Error during acquisition loop: {e}")

@@ -340,23 +340,14 @@ class gDrive:
 
 
 if __name__ == "__main__":
-    # creds = identify()
-    # main()
     gdrive = gDrive()
-
     gdrive.listFile()
-
     gdrive.search_file()
-
     value = gdrive.download_file("1fRfATbOPyhDy-GmCsxwPsJlypWKndKup")
     gdrive.writeFile("dog1.jpg", value)
-
     gdrive.upload_basic("stream.asx")
-
     foid = gdrive.create_folder("Upload")
-
     gdrive.upload_to_folder("sink.jpg", foid)
-
     gdrive.create_shortcut("Project Plan Shortcut", foid)
 
     # value = gDrive.export_pdf(real_file_id="1Xh2VQF3iJ-Io2_GtNTcw6sXnoudSBvMo")
