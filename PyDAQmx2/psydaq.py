@@ -68,7 +68,7 @@ Note:
 - The program assumes a voltage range of 0 to 5 volts for both AO and AI channels.
 """
 
-import csv
+# import csv
 import datetime
 import os
 import time
