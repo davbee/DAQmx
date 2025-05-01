@@ -224,6 +224,7 @@ class DAQApp(QMainWindow):
         exporter.parameters()["width"] = 800  # Set the width of the exported image
         exporter.export(filename)
         self.log_message(f"Plot saved as {filename}")
+        self.gd(filename, "1TBQsJ8-182ql2_p4eoHABn0vlgHJ7D6v")
 
     def generate_output_points(self):
         """Generate a sine wave oscillating between 0 and 5 with a mean of 2.5."""
